@@ -1,1 +1,7 @@
 .idea
+server/web/bundles/
+server/app/bootstrap*
+server/app/cache/*
+server/app/logs/*
+server/vendor/
+server/app/config/parameters.ini
