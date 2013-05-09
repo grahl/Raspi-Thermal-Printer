@@ -1,0 +1,12 @@
+printer_request_new:
+    pattern:  /printer_request_new
+    defaults: { _controller: AcmePrinterServerBundle:Default:new }
+printer_request_success:
+    pattern:  /printer_request_success
+    defaults: { _controller: AcmePrinterServerBundle:Default:success }
+printer_request_fail:
+    pattern:  /printer_request_fail
+    defaults: { _controller: AcmePrinterServerBundle:Default:fail }
+homepage:
+    pattern:  /index
+    defaults: {_controller: AcmePrinterServerBundle:Default:index }

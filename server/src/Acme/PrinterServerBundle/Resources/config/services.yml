@@ -1,0 +1,7 @@
+parameters:
+#    acme_printer_server.example.class: Acme\PrinterServerBundle\Example
+
+services:
+#    acme_printer_server.example:
+#        class: %acme_printer_server.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
