@@ -39,7 +39,7 @@ class DefaultController extends Controller
     }
   }
 
-  private function callPrinter($text) {
+  public function callPrinter($text) {
     exec('TPrinter ' . $text);
   }
 
