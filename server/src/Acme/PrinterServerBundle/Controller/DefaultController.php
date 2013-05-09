@@ -40,14 +40,14 @@ class DefaultController extends Controller
   }
 
   public function callPrinter($text) {
-    $rows=explode('\n',$text);
+    $rows=explode("\n",$text);
 
     foreach ($rows as $row) {
-    exec('echo \'' . $row . '\' | TPrinter');
-      exec('echo \'\n\' | TPrinter');
-      exec('echo \'' . $row . '\' >> /tmp/printer_log');
+      exec('echo  "' . $row . '" | TPrinter');
+      exec('echo "\n" | TPrinter');
+      exec('echo "' . $row . '" >> /tmp/printer_log');
     }
-    exec('echo \'\n\' | TPrinter');
+    exec('echo "\n" | TPrinter');
   }
 
   public function failAction() {
