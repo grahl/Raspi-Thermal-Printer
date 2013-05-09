@@ -30,8 +30,7 @@ int main(int argc, char *argv[])
    }
 
     p->write(tmp);
-    p->write("\n");
-    p->write("\n");
+
     std::cout << "Closing Device" << std::endl;
     p->close();
 
