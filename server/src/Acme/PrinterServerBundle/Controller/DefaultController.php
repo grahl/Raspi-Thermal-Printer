@@ -46,7 +46,7 @@ class DefaultController extends Controller
       exec('echo  "' . $row . '" | TPrinter');
       exec('echo "' . $row . '" >> /tmp/printer_log');
     }
-    exec('echo "\n" | TPrinter');
+    exec('echo "\n\n" | TPrinter');
   }
 
   public function failAction() {
