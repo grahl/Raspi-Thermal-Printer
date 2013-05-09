@@ -40,7 +40,7 @@ class DefaultController extends Controller
   }
 
   public function callPrinter($text) {
-    exec('TPrinter ' . $text);
+    exec('TPrinter < ' . $text);
   }
 
   public function failAction() {
