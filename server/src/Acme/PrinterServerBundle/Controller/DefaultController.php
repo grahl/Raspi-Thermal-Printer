@@ -27,8 +27,9 @@ class DefaultController extends Controller
       $form->bind($request);
 
       if ($form->isValid()) {
-        // perform some action, such as saving the task to the database
-       // exec('printer' . $form->text);
+
+        callPrinter('test');
+
         return $this->redirect($this->generateUrl('printer_request_success'));
       }
     } else {
@@ -36,6 +37,10 @@ class DefaultController extends Controller
         'form' => $form->createView(),
       ));
     }
+  }
+
+  private function callPrinter($text) {
+    exec('TPrinter ' . $text);
   }
 
   public function failAction() {
