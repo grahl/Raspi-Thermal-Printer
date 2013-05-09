@@ -44,7 +44,6 @@ class DefaultController extends Controller
 
     foreach ($rows as $row) {
       exec('echo  "' . $row . '" | TPrinter');
-      exec('echo "\n" | TPrinter');
       exec('echo "' . $row . '" >> /tmp/printer_log');
     }
     exec('echo "\n" | TPrinter');
