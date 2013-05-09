@@ -27,8 +27,8 @@ class DefaultController extends Controller
       $form->bind($request);
 
       if ($form->isValid()) {
-
-        callPrinter('test');
+        $data = $form->getData();
+        $this->callPrinter($data->text);
 
         return $this->redirect($this->generateUrl('printer_request_success'));
       }
