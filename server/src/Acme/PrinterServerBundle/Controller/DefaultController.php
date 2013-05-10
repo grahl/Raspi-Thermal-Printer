@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
   public function indexAction()
   {
-    return $this->render('AcmePrinterServerBundle:Default:index.html.twig');
+    return $this->render('AcmePrinterServerBundle::index.html.twig');
   }
 
   public function newAction(Request $request)
@@ -33,7 +33,7 @@ class DefaultController extends Controller
         return $this->redirect($this->generateUrl('printer_request_success'));
       }
     } else {
-      return $this->render('AcmePrinterServerBundle:Default:new.html.twig', array(
+      return $this->render('AcmePrinterServerBundle::new.html.twig', array(
         'form' => $form->createView(),
       ));
     }
@@ -52,9 +52,9 @@ class DefaultController extends Controller
   }
 
   public function failAction() {
-    return $this->render('AcmePrinterServerBundle:Default:fail.html.twig');
+    return $this->render('AcmePrinterServerBundle::fail.html.twig');
   }
   public function successAction() {
-    return $this->render('AcmePrinterServerBundle:Default:success.html.twig');
+    return $this->render('AcmePrinterServerBundle::success.html.twig');
   }
 }

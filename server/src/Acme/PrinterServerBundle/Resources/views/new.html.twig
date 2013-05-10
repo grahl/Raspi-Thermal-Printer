@@ -1,6 +1,7 @@
-{# src/Acme/TaskBundle/Resources/views/Default/new.html.twig #}
+{# src/Acme/TaskBundle/Resources/views/new.html.twig #}
 {% extends '::base.html.twig' %}
 {% block title %}Printer request{% endblock %}
+
 {% block body %}
 <form action="{{ path('printer_request_new') }}" method="post" {{ form_enctype(form) }}>
     {{ form_widget(form) }}
