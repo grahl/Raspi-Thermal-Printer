@@ -48,6 +48,7 @@ class DefaultController extends Controller
     }
     exec('echo "\n" | TPrinter');
     exec('echo "\n" | TPrinter');
+    exec('echo "\n" | TPrinter');
   }
 
   public function failAction() {
