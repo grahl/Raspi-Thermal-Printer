@@ -8,5 +8,5 @@ printer_request_fail:
     pattern:  /printer_request_fail
     defaults: { _controller: AcmePrinterServerBundle:Default:fail }
 homepage:
-    pattern:  /index
+    pattern:  /
     defaults: {_controller: AcmePrinterServerBundle:Default:index }
