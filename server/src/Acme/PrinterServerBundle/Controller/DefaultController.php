@@ -40,6 +40,7 @@ class DefaultController extends Controller
   }
 
   public function callPrinter($text) {
+    setlocale(LC_ALL, 'de_CH');
     $text = iconv("UTF-8", "ASCII//TRANSLIT", $text);
     $rows=explode("\n",$text);
 
