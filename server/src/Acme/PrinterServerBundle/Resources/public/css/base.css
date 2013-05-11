@@ -96,6 +96,7 @@ div .item-desc {
   font-weight: bold;
   font-size: 2em;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -104,4 +105,8 @@ label {
 textarea {
   height: 60px;
   width: 325px;
+}
+
+.content {
+  padding: 5px;
 }
